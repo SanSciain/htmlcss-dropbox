@@ -187,24 +187,37 @@ nav .button{
 .prieces{
     margin-top: 100px;
     /* test */
-    height: 600px;
     background-color: rebeccapurple;
 }
 
 /* Prieces Header */
-.prieces .h2{
-    font-size: 5em;
+.prieces h2{
+    font-size: 2.5em;
     font-weight: bold;
     padding-top: 1.2em;
+}
+
+.prieces .radio{
+    display: inline-block;
+    margin: 2em 2em 2em 0;
+    font-size: 1.2em;
+}
+
+.prieces input[type="radio"]{
+    vertical-align: middle;
+}
+
+.radio span{
+    vertical-align: middle;
 }
 
 
 
 
+
+/* Prieces Columns */
 .columns{
     width: 100%;
-    /* test */
-    background-color: rgb(133, 133, 133);
 }
 
 .prieces .column.priece{
@@ -214,6 +227,26 @@ nav .button{
     height: 100px;
 }
 
+.prieces .user{
+    border: 1px solid #e7e7e8;
+    padding: .5em 0;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+
+
+.prieces .plan .span{
+    display: block;
+}
+
+
+
+
+
+
+
+/* Prieces Footer */
 .prieces .footer{
     /* test */
     height: 100px;
