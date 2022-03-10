@@ -5,3 +5,123 @@
     box-sizing: border-box;
 }
 
+/* Common */
+
+/* Clearfix */
+.clearfix{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Columns */
+.column{
+    float: left;
+}
+
+
+/* Containers */
+.container-large{
+    width: 80%;
+    margin: 0 auto;
+    /* test */
+    background-color: blue;
+    height: 300px;
+}
+
+.container-small{
+    width: 60%;
+    margin: 0 auto;
+    /* test */
+    height: 300px;
+    background-color: red;
+}
+
+/* Header */
+header{
+    /* test */
+    height: 50px;
+    background-color: aquamarine;
+}
+
+nav{
+    width: 100%;
+}
+
+nav .column{
+    width: 50%;
+    /* test */
+    height: 50px;
+    border: 4px solid deeppink;
+}
+
+
+/* Main */
+
+/* Banner */
+.banner{
+    /* test */
+    height: 400px;
+    background-color: antiquewhite;
+}
+
+h1{
+    /* test */
+    background-color: rgb(70, 3, 148);
+}
+
+.banner .column.text{
+    width: 40%;
+    /* test */
+    border: 4px solid deeppink;
+    height: 100px;
+} 
+
+.banner .column.img{
+    width: 60%;
+    /* test */
+    border: 4px solid deeppink;
+    height: 100px;
+}
+
+/* Prieces */
+.prieces{
+    /* test */
+    height: 600px;
+    background-color: rebeccapurple;
+}
+
+/* Partener */
+.partner{
+    /* test */
+    height: 600px;
+    background-color: chartreuse;
+}
+
+/* Operations */
+.operations{
+    /* test */
+    height: 600px;
+    background-color: rgb(23, 114, 50);
+}
+
+/* Teams */
+.teams{
+    /* test */
+    height: 600px;
+    background-color: rgb(235, 139, 14);
+}
+
+/* FAQ */
+.faq{
+    /* test */
+    height: 600px;
+    background-color: rgb(146, 19, 29);
+}
+
+/* Footer */
+footer{
+    /* test */
+    height: 600px;
+    background-color: rgb(255, 247, 6);
+}
