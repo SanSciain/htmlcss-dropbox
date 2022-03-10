@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>htmlcss-dropbox</title>
+    <!-- Style sheet -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Awesome fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     
@@ -30,7 +34,17 @@
 
             </div>
 
-            <div class="column right"></div>
+            <div class="column right">
+
+                <ul>
+                    <li><a href="">Supporto</a></li>
+                    <li><a href="">Contatta l'ufficio vendite</a></li>
+                    <li><a href="">Accedi</a></li>
+                </ul>
+
+                <a class="button" href="">Inizia</a>
+
+            </div>
 
         </nav>
     </header>
@@ -41,13 +55,39 @@
 
         <!-- Banner -->
         <section class="banner">
-            <div class="container-large clearfix">
+            <div class="container-large">
 
-                <h1>Lorem ipsum dolor sit, amet consectetur adipisicing.</h1>
+                <h1>
+                    Tutto Ciò che ti serve per il lavoro,
+                    <br>
+                    in un unico posto
+                </h1>
 
-                <div class="column text"></div>
+                <div class="jumbo  clearfix">
 
-                <div class="column img"></div>
+                    <div class="column text">
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ducimus veniam ipsam quasi! Aut enim, velit eos vero, odio unde fugiat sed expedita laborum animi est esse ea alias fuga atque.</p>
+
+                        <!-- Trovare una soluzione migliore allo span per non mettere button come block -->
+                        <span class="span-btn">
+                            <a class="button" href="">Inizia la tua prova gratuita</a>
+                        </span>
+                        
+
+                        <a class="annul" href="">Anulla in qualsiasi momento</a>
+
+                        <a class="icon" href="">
+                            <i class="fas fa-arrow-down"></i>
+                        </a>
+
+                    </div>
+
+                    <div class="column img">
+                        <img src="img/jumbo.png" alt="Dropbox interface">
+                    </div>
+
+                </div>
 
             </div>
         </section>
@@ -57,7 +97,13 @@
         <!-- Section Prieces -->
         <section class="prieces">
             <div class="container-small">
-                <div class="header"></div>
+                <div class="header">
+                    <h2>Trova il piano Dropbox Business che fa per te</h2>
+                    <div class="radio">
+                        <input type="radio" name="factruration" id="monthly">
+                        <input type="radio" name="factruration" id="annual">
+                    </div>
+                </div>
 
                 <div class="columns clearfix">
                     <div class="column priece"></div>
@@ -65,7 +111,9 @@
                     <div class="column priece"></div>
                 </div>
 
-                <div class="footer"></div>
+                <div class="footer">
+                    
+                </div>
                 
             </div>
         </section>

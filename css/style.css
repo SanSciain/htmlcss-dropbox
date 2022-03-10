@@ -29,10 +29,18 @@ img{
 }
 
 /* Clearfix */
-.clearfix{
+.clearfix::after{
     content: "";
     display: table;
     clear: both;
+}
+
+/* Buttons */
+.button{
+    display: inline-block;
+    background-color: #0061ff;
+    color: white;
+    padding: .6em 1.5em;
 }
 
 /* Columns */
@@ -45,17 +53,11 @@ img{
 .container-large{
     width: 80%;
     margin: 0 auto;
-    /* test */
-    background-color: blue;
-    height: 300px;
 }
 
 .container-small{
     width: 60%;
     margin: 0 auto;
-    /* test */
-    height: 300px;
-    background-color: red;
 }
 
 /* Header */
@@ -63,13 +65,29 @@ img{
 nav{
     width: 100%;
     height: 70px;
-    background-color: chartreuse;
 }
 
 nav .column{
     width: 50%;
 }
 
+nav ul{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+nav li{
+    display: inline-block;
+    padding-left: 3em;
+}
+
+nav a{
+    font-size: 1.5em;
+    font-weight: 600;
+    color: black;
+}
+
+/* Left Column */
 nav .logo{
     height: 60%;
     width: calc(100%/5);
@@ -82,60 +100,106 @@ nav .logo{
     vertical-align: middle;
 }
 
-nav ul{
-    display: inline-block;
-    vertical-align: middle;
+/* Right Column */
+nav .right{
+    text-align: right;
+    line-height: 70px;
 }
 
-nav li{
-    display: inline-block;
-    padding-left: 1.4em;
-    font-size: 1.5em;
-    font-weight: 600;
-    color: black;
+.right li{
+    padding-right: 3em;
+    padding-left: 0;
 }
+
+nav a{
+    display: inline-block;
+}
+
+
+nav .button{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    background-color: #0061ff;
+    color: white;
+    padding: .6em 1.5em;
+    margin-right: 2em;
+}
+
+
 
 
 /* Main */
 
 /* Banner */
 .banner{
-    /* test */
-    height: 400px;
-    background-color: antiquewhite;
+    height: 550px;
+    background-color: #b4d0e7;
 }
 
-h1{
-    /* test */
-    background-color: rgb(70, 3, 148);
+.banner h1{
+    font-size: 5em;
+    font-weight: bold;
+    padding-top: 1.2em;
+}
+
+.jumbo{
+    padding-top: 4em; 
 }
 
 .banner .column.text{
-    width: 40%;
-    /* test */
-    border: 4px solid deeppink;
-    height: 100px;
+    width: 30%;
+    font-size: 1.2em;
+    padding-right: 4em;
+    line-height: 1.2em;
 } 
 
-.banner .column.img{
-    width: 60%;
-    /* test */
-    border: 4px solid deeppink;
-    height: 100px;
+.banner .span-btn{
+    display: block;
 }
+
+.banner .button{
+    margin-top: 2em;
+}
+
+.banner .annul{
+    display: block;
+    margin-top: 1em;
+    color: black;
+}
+
+.banner .icon{
+    color: black;
+    display: block;
+    margin-top: .5em;
+    font-size: 3em;
+}
+
+.banner .column.img{
+    width: 70%;
+}
+
+
+
+
 
 /* Prieces */
 .prieces{
+    margin-top: 100px;
     /* test */
     height: 600px;
     background-color: rebeccapurple;
 }
 
-.prieces .header{
-    /* test */
-    height: 100px;
-    background-color: cadetblue;
+/* Prieces Header */
+.prieces .h2{
+    font-size: 5em;
+    font-weight: bold;
+    padding-top: 1.2em;
 }
+
+
+
 
 .columns{
     width: 100%;
