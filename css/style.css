@@ -65,15 +65,18 @@ img{
     font-size: 2.5em;
     font-weight: bold;
     padding-top: 1.2em;
+    line-height: 1.1em;
 }
 
 .title-small{
-    font-size: 2em;
+    font-size: 1.6em;
+    line-height: 1.1em;
 }
 
 .text-small{
     font-size: 1.1em;
     line-height: 1.2em;
+    font-weight: 400;
 }
 
 
@@ -159,6 +162,7 @@ nav .button{
     font-size: 5em;
     font-weight: bold;
     padding-top: 1.2em;
+    line-height: 1.1em;
 }
 
 .jumbo{
@@ -380,6 +384,10 @@ nav .button{
     padding: 4em 0;
 }
 
+.row:last-of-type{
+    padding-bottom: 10em;
+}
+
 .column.operation{
     width: calc(100%/3 - 8em /3);
 }
@@ -407,49 +415,126 @@ nav .button{
 
 
 /* Teams */
-.teams{
-    /* test */
-    height: 600px;
-    background-color: rgb(235, 139, 14);
-}
-
-.teams .header a{
+.companies .header a{
     color: #3682ff;
     text-decoration: underline;
     display: inline-block;
-    margin: 2em 0;
+    margin: 2em 0 3em;
 }
 
 
-
-
-.teams .main{
+.companies .main{
     width: 100%;
 }
 
-.column.team{
+.column.teams{
     width: calc(100%/6);
-    /* test */
-    border: 4px solid deeppink;
-    height: 100px;
 }
 
-.teams .column.center{
+.companies .column.center{
     width: calc(100%/3);
-    /* test */
-    border: 4px solid deeppink;
-    height: 100px;
+    background-color: #f5f5f5;
+    padding: 2em;
+    min-height: calc(100vw / 3);
+    overflow: scroll;
 }
 
-.teams .footer{
-    /* test */
-    background-color: rgb(138, 104, 104);
-    height: 100px;
+.logo-container img{
+    width: 25%;
+    margin: 1em 0;
 }
 
-.teams .container-small.foot{
-    /* test */
-    height: 100px;
+                                    /* Aggiungere la linea sotto il logo nella colonna centrale */
+
+
+    .center p{
+        padding: 2em 0;
+    }
+
+
+    .center span{
+        padding: 2em 0;
+    }
+
+
+
+
+
+.teams .team{
+    height: calc(100vw/6);
+    padding: 5em;
+    line-height: calc(100vw/6 - 5em);
+    text-align: center;
+    vertical-align: middle;
+}
+
+                                    /* Cambiare colore del svg */
+.team img{
+    object-fit: contain;
+}
+
+.team.one{
+    background-color: #a2d39b;
+}
+
+.team.two{
+    background-color:#0093ce ;
+}
+
+.team.three{
+    background-color:#61082b ;
+}
+
+.team.four{
+    background-color: #ff1c1c;
+}
+
+.team.five{
+    background-color:#d5001f ;
+}
+
+.team.six{
+    background-color: #0d2481;
+}
+
+.team.seven{
+    background-color: #b4d0e7;
+}
+
+.team.eight{
+    background-color: #ffd830;
+}
+
+
+
+
+
+
+.companies .footer{
+    background-color: #b4d0e7;
+}
+
+.footer .column{
+    width: 50%;
+}
+
+.companies .container-small.foot{
+    padding: 8em 0;
+}
+
+.companies .footer .title{
+    padding: 0;
+    color: #61082b;
+}
+
+.companies .footer .col-btn{
+    text-align: center;
+}
+
+.companies .footer .button{
+    background-color: white;
+    color: black;
+    padding: .5em 4em;
 }
 
 
