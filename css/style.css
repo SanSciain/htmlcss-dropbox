@@ -192,8 +192,6 @@ nav .button{
 /* Prieces */
 .prieces{
     margin-top: 100px;
-    /* test */
-    background-color: rebeccapurple;
 }
 
 /* Prieces Header */
@@ -245,7 +243,10 @@ nav .button{
     padding: 1.5em;
     border: 1px solid #e7e7e8;
     border-top: 0;
+    min-height: 600px;
 }
+
+
 
 .plan h3{
     font-size: 2em;
@@ -310,11 +311,26 @@ nav .button{
 
 /* Prieces Footer */
 .prieces .footer{
-    /* test */
-    height: 100px;
-    background-color: rgb(11, 97, 100);
+    padding:3em 0;
 }
 
+.prieces .footer .offer{
+    min-height: auto;
+}
+
+.prieces .footer .enterprise{
+    width: 70%;
+}
+
+.prieces .footer .office{
+    width: 30%;
+}
+
+.prieces .footer .office .button{
+    display: block;
+    margin-top: 1em;
+    text-align: center;
+}
 
 
 /* Partener */
