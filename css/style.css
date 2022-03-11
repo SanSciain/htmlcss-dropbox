@@ -61,10 +61,21 @@ img{
 }
 
 /* Text */
+.title{
+    font-size: 2.5em;
+    font-weight: bold;
+    padding-top: 1.2em;
+}
+
+.title-small{
+    font-size: 2em;
+}
+
 .text-small{
     font-size: 1.1em;
     line-height: 1.2em;
 }
+
 
 
 /* Header */
@@ -191,16 +202,11 @@ nav .button{
 
 /* Prieces */
 .prieces{
-    margin-top: 100px;
+    margin-top: 250px;
 }
+
 
 /* Prieces Header */
-.prieces h2{
-    font-size: 2.5em;
-    font-weight: bold;
-    padding-top: 1.2em;
-}
-
 .prieces .radio{
     display: inline-block;
     margin: 2em 2em 2em 0;
@@ -248,9 +254,6 @@ nav .button{
 
 
 
-.plan h3{
-    font-size: 2em;
-}
 
 .plan .euros{
     font-weight: bold;
@@ -289,6 +292,7 @@ nav .button{
 
 .try .buy{
     color: #3682ff;
+    text-decoration: underline;
 }
 
 .highlights h4{
@@ -335,47 +339,61 @@ nav .button{
 
 /* Partener */
 .partner{
-    /* test */
-    height: 600px;
-    background-color: chartreuse;
+    padding: 5em 0;
 }
 
 
 .partner .column{
     width: 50%;
-    /* test */
-    border: 4px solid deeppink;
-    height: 100px;
 }
+
+.partner .text{
+    padding: 4em 3em;
+}
+
+
+.partner p.text-small{
+    padding: 2em 0;
+}
+
+
+.partner .button{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    font-weight: 500;
+}
+
+
+
+
+
+
 
 
 
 
 
 /* Operations */
-.operations{
-    /* test */
-    height: 600px;
-    background-color: rgb(23, 114, 50);
-}
-
-.operations h2{
-    /* test */
-    background-color: rgb(131, 243, 243);
-}
-
 .row{
     width: 100%;
-    /* test */
-    height: 130px;
-    background-color: rgb(23, 31, 138);
+    padding: 4em 0;
 }
 
 .column.operation{
-    width: calc(100%/3);
-    /* test */
-    border: 4px solid deeppink;
-    height: 100px;
+    width: calc(100%/3 - 8em /3);
+}
+
+.row .column.operation:nth-child(2){
+    margin: 0 4em;
+}
+
+.operations .title-small{
+    padding: 1em 0;
+}
+
+.operations .text-small span{
+    text-decoration: underline;
 }
 
 
@@ -395,10 +413,15 @@ nav .button{
     background-color: rgb(235, 139, 14);
 }
 
-.teams .container-small.header{
-    /* test */
-    height: 100px;
+.teams .header a{
+    color: #3682ff;
+    text-decoration: underline;
+    display: inline-block;
+    margin: 2em 0;
 }
+
+
+
 
 .teams .main{
     width: 100%;
