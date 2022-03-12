@@ -11,6 +11,7 @@
 html{
     font-size: 62.5%;
     font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 /* List */
@@ -86,10 +87,15 @@ img{
 nav{
     width: 100%;
     height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
 }
 
 nav .column{
     width: 50%;
+    line-height: 70px;
 }
 
 nav ul{
@@ -106,6 +112,7 @@ nav a{
     font-size: 1.5em;
     font-weight: 600;
     color: black;
+    display: inline-block;
 }
 
 /* Left Column */
@@ -124,7 +131,6 @@ nav .logo{
 /* Right Column */
 nav .right{
     text-align: right;
-    line-height: 70px;
 }
 
 .right li{
@@ -132,10 +138,10 @@ nav .right{
     padding-left: 0;
 }
 
-nav a{
-    display: inline-block;
-}
 
+nav ul a:hover{
+    border-bottom: 2px solid black;
+}
 
 nav .button{
     display: inline-block;
@@ -154,6 +160,7 @@ nav .button{
 
 /* Banner */
 .banner{
+    margin-top: 70px;
     height: 550px;
     background-color: #b4d0e7;
 }
@@ -175,24 +182,26 @@ nav .button{
     
 } 
 
-.banner .span-btn{
-    display: block;
-}
 
 .banner .button{
     margin-top: 2em;
 }
 
-.banner .annul{
-    display: block;
+.banner .div-annual{
     margin-top: 1em;
+}
+
+.banner .annul{
+
     color: black;
+}
+
+.banner .div-icon{
+    margin-top: 4em;
 }
 
 .banner .icon{
     color: black;
-    display: block;
-    margin-top: .5em;
     font-size: 3em;
 }
 
@@ -253,7 +262,7 @@ nav .button{
     padding: 1.5em;
     border: 1px solid #e7e7e8;
     border-top: 0;
-    min-height: 600px;
+    min-height: 800px;
 }
 
 
@@ -519,7 +528,7 @@ nav .button{
 }
 
 .companies .container-small.foot{
-    padding: 8em 0;
+    padding: 7em 0;
 }
 
 .companies .footer .title{
@@ -550,9 +559,39 @@ nav .button{
     background-color: rgb(146, 19, 29);
 }
 
+
+
+
+
+
+
 /* Footer */
 footer{
-    /* test */
-    height: 600px;
-    background-color: rgb(255, 247, 6);
+    background-color: black;
+    color: white;
+}
+
+footer .column{
+    width: calc(100% / 5);
+}
+
+footer h4{
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 6em 0 1.2em;
+}
+
+footer li{
+    padding: .5em 0}
+
+footer a{
+    color: inherit;
+}
+
+footer span{
+    display: inline-block;
+    margin-top: 4em;
+    padding: 2em 0;
+    color: #666666;
+    border-top: 2px solid #303030;
 }
