@@ -24,6 +24,8 @@ a{
     text-decoration: none;
 }
 
+
+
 /* Image */
 img{
     width: 100%;
@@ -42,6 +44,10 @@ img{
     background-color: #0061ff;
     color: white;
     padding: .6em 1.5em;
+}
+
+.button:hover{
+    filter: opacity(40%);
 }
 
 /* Columns */
@@ -101,7 +107,6 @@ nav .column{
 
 nav .menu{
     display: inline-block;
-    vertical-align: middle;
 }
 
 nav .menu > li{
@@ -142,17 +147,16 @@ nav .right{
     text-align: right;
 }
 
-.right .menu > li{
+nav .right .menu > li{
     padding-right: 3em;
     padding-left: 0;
 }
 
-nav .support{
+nav .relative{
     position: relative;
 }
 
 
-                                    /* Sistemare submenu che si muove quando passo cursore da "a" a "li" */
 nav .support:hover .submenu{
     display: block;
 }
@@ -163,12 +167,14 @@ nav .submenu{
     display: none;
     position: absolute;
     top: calc(100% - 2px);
+    z-index: -1;
     left: -10%;
     background-color: #f5f5f5;
     text-align: left;
     line-height: 4em;
+    width: max-content;
+    padding: 1em;
 }
-
 
 
 
@@ -256,6 +262,9 @@ nav .button{
     font-size: 1.2em;
 }
 
+
+
+                                    /* Stilizzare i radiobuttons */
 .prieces input[type="radio"]{
     vertical-align: middle;
 }
@@ -497,7 +506,6 @@ nav .button{
 
 
 
-                                    /* Aggiungere il bordo sul primo team */
 
 .teams .team{
     height: calc(100vw/6);
@@ -516,6 +524,7 @@ nav .button{
 
 .team.one{
     background-color: #a2d39b;
+    border: 1em solid #d0e9cd ;
 }
 
 .team.two{
@@ -669,6 +678,10 @@ footer li{
 
 footer a{
     color: inherit;
+}
+
+footer a:hover{
+    text-decoration: underline;
 }
 
 footer span{
