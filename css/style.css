@@ -591,13 +591,16 @@ nav .button{
 }
 
 .faq .questions{
-    padding: 3em 0;
+    padding: 3em 0 10em;
 }
 
 .faq .question{
     border-top: 1px solid  grey;
-    border-bottom: 1px solid  grey;
     padding: 2em 0;
+}
+
+.faq .questions .question:last-child{
+    border-bottom: 1px solid grey;
 }
 
 .faq .column.text{
