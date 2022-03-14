@@ -475,7 +475,7 @@ nav .button{
     background-color: #f5f5f5;
     padding: 2em;
     min-height: calc(100vw / 3);
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .logo-container img{
@@ -585,17 +585,61 @@ nav .button{
 
 
 /* FAQ */
-.faq{
-    /* test */
-    height: 600px;
-    background-color: rgb(146, 19, 29);
-}
 
 .faq .title{
-    padding: 4em 0 2em;
+    padding-top: 4em;
 }
 
+.faq .questions{
+    padding: 3em 0;
+}
 
+.faq .question{
+    border-top: 1px solid  grey;
+    border-bottom: 1px solid  grey;
+    padding: 2em 0;
+}
+
+.faq .column.text{
+    width: 70%;
+}
+
+.faq .column.icons{
+    width: 30%;
+}
+
+.faq .text h4{
+    font-size: 1.4em;
+    line-height: 1.2;
+}
+
+.faq .text p{
+    display: none;
+    color: #89959f;
+    padding: 2em 0;
+}
+
+.faq .icons{
+    text-align: right;
+    font-size: 2.5em;
+    padding-right: 1em;
+}
+
+.faq .icons .icon.up{
+    display: none;
+}
+
+.faq .question:hover .text>p{
+    display: block;
+}
+
+.faq .question:hover .icon.down{
+    display: none;
+}
+
+.faq .question:hover .icon.up{
+    display: block;
+}
 
 
 
