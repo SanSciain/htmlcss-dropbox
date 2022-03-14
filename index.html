@@ -26,7 +26,7 @@
                     <img src="img/logo-small.png" alt="logo">
                 </div>
 
-                <ul>
+                <ul class="menu">
                     <li><a href="">Perchè Dropbox?</a></li>
                     <li><a href="">Funzioni</a></li>
                     <li><a href="">Piani e prezzi</a></li>
@@ -36,8 +36,14 @@
 
             <div class="column right">
 
-                <ul>
-                    <li><a href="">Supporto</a></li>
+                <ul class="menu">
+                    <li class="support">
+                        <a href="">Supporto</a>
+                        <ul class="submenu">
+                            <li><a href="">Centro assistenza</a></li>
+                            <li><a href="">Forum della community</a></li>
+                        </ul>
+                    </li>
                     <li><a href="">Contatta l'ufficio vendite</a></li>
                     <li><a href="">Accedi</a></li>
                 </ul>
@@ -107,12 +113,12 @@
 
                     <div class="radio month">
                         <input type="radio" name="factruration" id="monthly">
-                        <span>Fatturazione mensile</span>
+                        <label>Fatturazione mensile</label>
                     </div>
 
                     <div class="radio annual">
                         <input type="radio" name="factruration" id="annual">
-                        <span>Fatturazione annuale</span>
+                        <label>Fatturazione annuale</label>
                     </div>
 
                 </div>
@@ -557,7 +563,8 @@
         <!-- Section FAQ-->
         <section class="faq">
             <div class="container-small clearfix">
-
+                <h2 class="title">Domande frequenti</h2>
+                
             </div>
         </section>
         <!-- /Section FAQ-->
