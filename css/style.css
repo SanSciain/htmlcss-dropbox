@@ -492,11 +492,18 @@ nav .button{
     margin: 1em 0;
 }
 
-                                    /* Aggiungere la linea sotto il logo nella colonna centrale */
+
+.companies .column.center p::before{
+    content: "";
+    border-top: 1px solid grey;
+    display: block;
+    width: 30px;
+    padding-bottom: 3em;
+}
 
 
     .center p{
-        padding: 2em 0;
+        padding: 1em 0 2em;
     }
 
 
