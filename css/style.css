@@ -325,10 +325,17 @@ nav .button{
     padding: 2em 0;
 }
 
-                            /* Sistemare quando va a capo frase va sotto icona */
 
 .features li{
     margin: .6em 0;
+}
+
+.features span {
+    padding-left: 1.5em;
+}
+
+.features i{
+    margin-left: -1.1em;
 }
 
 
