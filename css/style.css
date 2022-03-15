@@ -502,21 +502,22 @@ nav .button{
 
 .companies .column.center p::before{
     content: "";
-    border-top: 1px solid grey;
+    background-color: grey;
     display: block;
+    height: 1px;
     width: 30px;
-    padding-bottom: 3em;
+    margin: 1em 0 2em;
 }
 
 
-    .center p{
+.center p{
         padding: 1em 0 2em;
-    }
+}
 
 
-    .center span{
+.center span{
         padding: 2em 0;
-    }
+}
 
 
 
